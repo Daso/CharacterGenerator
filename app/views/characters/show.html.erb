@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @character.name %>
+</p>
+
+<p>
+  <b>Strong:</b>
+  <%= @character.strong %>
+</p>
+
+<p>
+  <b>Intelligent:</b>
+  <%= @character.intelligent %>
+</p>
+
+<p>
+  <b>Dexterity:</b>
+  <%= @character.dexterity %>
+</p>
+
+<p>
+  <b>Constitution:</b>
+  <%= @character.constitution %>
+</p>
+
+<p>
+  <b>Wisdom:</b>
+  <%= @character.wisdom %>
+</p>
+
+<p>
+  <b>Charisma:</b>
+  <%= @character.charisma %>
+</p>
+
+
+<%= link_to 'Edit', edit_character_path(@character) %> |
+<%= link_to 'Back', characters_path %>

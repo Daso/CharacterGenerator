@@ -1,0 +1,23 @@
+<%= button_to "Generar", :action => "generate"  %>
+
+<%= simple_form_for(@character) do |f| %>
+
+    <%= f.association :player, :as => :radio_buttons %>
+  
+    <%= f.input :name, :wrapper_html => { :class => 'field'} %>    
+ 
+    <%= f.input :strong, :wrapper_html => { :class => 'field', :value => @srt} %>
+
+    <%= f.input :intelligent, :wrapper_html => { :class => 'field'} %>
+
+    <%= f.input :dexterity, :wrapper_html => { :class => 'field'} %>
+
+    <%= f.input :constitution, :wrapper_html => { :class => 'field'} %>
+
+    <%= f.input :wisdom, :wrapper_html => { :class => 'field'} %>
+
+    <%= f.input :charisma, :wrapper_html => { :class => 'field'} %>
+
+    <%= f.button :submit %>
+  </div>
+<% end %>
